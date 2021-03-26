@@ -21,6 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 public class CategoryControllerTest extends TestCase {
@@ -76,6 +77,7 @@ public class CategoryControllerTest extends TestCase {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.name", Matchers.equalTo(NAME)));
 
     }
+
 
 
 }
